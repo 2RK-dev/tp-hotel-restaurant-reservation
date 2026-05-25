@@ -506,7 +506,7 @@
         </children>
         <children xmi:type="notation:Shape" xmi:id="_-kJDLFhfEfGrtaUgPRVRqw" type="3005" element="_-kIcEFhfEfGrtaUgPRVRqw" fontName="Noto Sans" fillColor="14334392" lineColor="10710316">
           <children xmi:type="notation:DecorationNode" xmi:id="_-kJDLlhfEfGrtaUgPRVRqw" type="5005"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-kJDLVhfEfGrtaUgPRVRqw" x="388" y="17" width="128" height="64"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-kJDLVhfEfGrtaUgPRVRqw" x="388" y="17" width="152" height="76"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_-kMGcFhfEfGrtaUgPRVRqw" type="3005" element="_-kLfYFhfEfGrtaUgPRVRqw" fontName="Noto Sans" fillColor="14334392" lineColor="10710316">
           <children xmi:type="notation:DecorationNode" xmi:id="_-kMGclhfEfGrtaUgPRVRqw" type="5005"/>
