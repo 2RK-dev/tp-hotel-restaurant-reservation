@@ -1,0 +1,490 @@
+{
+  "id" : "roomCleaningForm",
+  "name" : "roomCleaningForm",
+  "type" : "form",
+  "uuid" : "8d96f9dc-0724-4c09-b9f5-46d4d774a348",
+  "modelVersion" : "2.6",
+  "lastUpdate" : 1780063895173,
+  "description" : "Page generated with Bonita UI designer",
+  "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : { },
+        "reference" : "061066ee-1229-4234-a4a5-71691dc67221",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "level" : {
+                  "type" : "constant",
+                  "value" : "Level 1"
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{ task.displayName }} {{reservation.chambre.numero}}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "center"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
+                }
+              },
+              "reference" : "7c879cba-8c5e-4c34-8010-6d7dc5f0771d",
+              "hasValidationError" : false,
+              "id" : "pbTitle",
+              "description" : ""
+            }
+          ],
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "allowHtml" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "label" : {
+                  "type" : "interpolation"
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{ task.displayDescription }}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
+                }
+              },
+              "reference" : "af43a9f2-cb18-4241-92c8-10e66492660f",
+              "hasValidationError" : false,
+              "id" : "pbText",
+              "description" : ""
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "type" : "formContainer",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "14360c6e-25df-41e5-821d-ac339bdad90f",
+        "hasValidationError" : false,
+        "id" : "pbFormContainer",
+        "container" : {
+          "type" : "container",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : { },
+          "reference" : "1950c566-e51b-4bfa-a7d6-62deef8293e9",
+          "hasValidationError" : false,
+          "id" : "pbContainer",
+          "rows" : [
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Numéro de Chambre"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 1
+                  },
+                  "placeholder" : {
+                    "type" : "interpolation"
+                  },
+                  "availableValues" : {
+                    "type" : "expression",
+                    "value" : "roomsToClean"
+                  },
+                  "displayedKey" : {
+                    "type" : "constant"
+                  },
+                  "returnedKey" : {
+                    "type" : "constant"
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.numeroChambre"
+                  }
+                },
+                "reference" : "4e288e32-8b46-42b3-a89a-6c70dc16faf5",
+                "hasValidationError" : false,
+                "id" : "pbSelect"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "removeItem" : {
+                    "type" : "variable"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "primary"
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Submit"
+                  },
+                  "dataToSend" : {
+                    "type" : "expression",
+                    "value" : "formOutput"
+                  },
+                  "dataFromError" : {
+                    "type" : "variable",
+                    "value" : "formOutput._submitError"
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "collectionPosition" : {
+                    "type" : "constant"
+                  },
+                  "targetUrlOnSuccess" : {
+                    "type" : "interpolation",
+                    "value" : "/bonita"
+                  },
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "Submit task"
+                  },
+                  "collectionToModify" : {
+                    "type" : "variable"
+                  },
+                  "valueToAdd" : {
+                    "type" : "expression"
+                  },
+                  "disabled" : {
+                    "type" : "expression",
+                    "value" : "$form.$invalid"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
+                  }
+                },
+                "reference" : "db5333f8-3bfd-47cf-a5b2-636e141f497f",
+                "hasValidationError" : false,
+                "id" : "pbButton",
+                "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "allowHtml" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "!formOutput._submitError.message"
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : "alert alert-danger col-lg-6 col-lg-offset-3"
+                  },
+                  "label" : {
+                    "type" : "interpolation"
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "<strong>Debug message</strong>\n<br/>\n{{formOutput._submitError.message}}\n{{submit_errors_list}}"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  }
+                },
+                "reference" : "c14a4c3b-9899-4af1-aab2-b3d59e541332",
+                "hasValidationError" : false,
+                "id" : "pbText",
+                "description" : ""
+              }
+            ]
+          ]
+        }
+      }
+    ]
+  ],
+  "variables" : {
+    "task" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/userTask/{{taskId}}"
+      ],
+      "exposed" : false
+    },
+    "formInput" : {
+      "type" : "json",
+      "value" : [
+        "{",
+        "  \"numeroChambre\" : \"\"",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "submit_errors_list" : {
+      "type" : "expression",
+      "value" : [
+        "if($data.formOutput && $data.formOutput._submitError && $data.formOutput._submitError.explanations){",
+        "\tconst liElements = $data.formOutput._submitError.explanations",
+        "\t\t.filter(cause => cause !== null)",
+        "\t\t.map(cause => \"<li>\" + cause + \"</li>\")",
+        "\t\t.join('');",
+        "\tif(liElements){",
+        "\t\treturn \"<ul>\" + liElements + \"</ul>\";",
+        "\t}",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "formOutput" : {
+      "type" : "expression",
+      "value" : [
+        "return {",
+        "\tnumeroChambre: $data.formInput.numeroChambre",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "context" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/userTask/{{taskId}}/context"
+      ],
+      "exposed" : false
+    },
+    "taskId" : {
+      "type" : "urlparameter",
+      "value" : [
+        "id"
+      ],
+      "exposed" : false
+    },
+    "reservation" : {
+      "type" : "url",
+      "value" : [
+        "../API/bdm/businessData/com.hotel.model.Reservation/{{reservationId}}"
+      ],
+      "exposed" : false
+    },
+    "reservationId" : {
+      "type" : "expression",
+      "value" : [
+        "return $data.context.reservation_ref.storageId;"
+      ],
+      "exposed" : false
+    },
+    "roomsToClean" : {
+      "type" : "expression",
+      "value" : [
+        "return [$data.reservation.chambre.numero + \" -- \" + $data.reservation.clientName];"
+      ],
+      "exposed" : false
+    }
+  },
+  "assets" : [
+    {
+      "id" : "645bfeb0-be36-426b-89f2-d6c133f34c26",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "a5245ad0-4d8d-4b83-8325-bb3318c07532",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "webResources" : [ ],
+  "hasValidationError" : false
+}

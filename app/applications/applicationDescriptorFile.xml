@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
-    <application token="hotellerie" version="1.0" profile="User" homePage="categoryViewer" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_themeBonita">
+    <application token="hotellerie" version="1.0" profile="User" homePage="reservationViewer" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_themeBonita">
         <displayName>Hotellerie</displayName>
         <applicationPages>
+            <applicationPage customPage="custompage_reservationViewer" token="reservationViewer"/>
+            <applicationPage customPage="custompage_roomViewer" token="roomViewer"/>
             <applicationPage customPage="custompage_categoryViewer" token="categoryViewer"/>
         </applicationPages>
         <applicationMenus>
+            <applicationMenu applicationPage="reservationViewer">
+                <displayName>Réservations</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="roomViewer">
+                <displayName>Chambres</displayName>
+            </applicationMenu>
             <applicationMenu applicationPage="categoryViewer">
                 <displayName>Catégories</displayName>
             </applicationMenu>

@@ -1,10 +1,10 @@
 {
-  "id" : "categoryViewer",
-  "name" : "categoryViewer",
+  "id" : "roomViewer",
+  "name" : "roomViewer",
   "type" : "page",
-  "uuid" : "5ab4c4c9-ab6d-41ab-9936-854bd0218d83",
+  "uuid" : "739d0b58-10b9-4e78-b4ba-cb530390b833",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1779996271645,
+  "lastUpdate" : 1779996149938,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12,
           "sm" : 12,
           "md" : 12,
-          "lg" : 6
+          "lg" : 12
         },
         "propertyValues" : {
           "cssClasses" : {
@@ -31,7 +31,7 @@
           },
           "text" : {
             "type" : "interpolation",
-            "value" : "Liste des catégories"
+            "value" : "Liste des chambres"
           },
           "level" : {
             "type" : "constant",
@@ -42,7 +42,7 @@
             "value" : "center"
           }
         },
-        "reference" : "2b8c8d8c-c1f1-44f7-9e84-f81d06b52822",
+        "reference" : "b6dedd8f-8c81-4305-b83b-5e36cb6bbfb7",
         "hasValidationError" : false,
         "id" : "pbTitle"
       }
@@ -76,21 +76,22 @@
             "type" : "constant",
             "value" : [
               "Id",
+              "Numéro",
               "Catégorie",
-              "Tarif"
+              "Propre",
+              "Occupé"
             ]
           },
           "content" : {
             "type" : "expression",
-            "value" : "categoriesList"
+            "value" : "roomsList"
           },
           "columnsKey" : {
             "type" : "expression",
-            "value" : "[\"persistenceId\", \"nom\", \"tarif\"]"
+            "value" : "[\"persistenceId\", \"numero\", \"categorie.nom\", \"propre\", \"occupe\"]"
           },
           "selectedRow" : {
-            "type" : "variable",
-            "value" : ""
+            "type" : "variable"
           },
           "striped" : {
             "type" : "constant",
@@ -105,31 +106,31 @@
             "value" : false
           }
         },
-        "reference" : "28761b8f-a4d2-403d-ae31-a86d711c2052",
+        "reference" : "27273bdc-2eb6-48c8-9d35-3df5a2a85770",
         "hasValidationError" : false,
         "id" : "pbTable"
       }
     ]
   ],
   "variables" : {
-    "categoriesList" : {
+    "roomsList" : {
       "type" : "businessdata",
       "value" : [
-        "{\"displayValue\":\"find [com.hotel.model.Categorie]\",\"businessObjectName\":\"Categorie\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"com.hotel.model.Categorie\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+        "{\"displayValue\":\"find [com.hotel.model.Chambre]\",\"businessObjectName\":\"undefined\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"com.hotel.model.Chambre\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
       ],
       "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "7b49793b-c6c7-432e-8f5b-79eeae9edb1d",
+      "id" : "66619535-bad6-4c15-9a55-d090109e2e3d",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "11803f28-ec82-4718-a550-b231da3867b3",
+      "id" : "737411ba-995f-4e0d-a592-14c48cd0cbcf",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
